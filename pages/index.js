@@ -1,18 +1,15 @@
 import React from 'react';
 import Link from "next/link";
+import A from "../components/A";
 
 const Index = () => {
   return (
     <div>
       <div className='navbar'>
 
-        <Link href="/">
-          <a className='link' >Главная</a>
-        </Link>
+        <A href={"/"} text={'Главная'}/>
+        <A href={"/users"} text={' Пользователи'}/>
 
-        <Link href="/users">
-          <a className='link' > Пользователи</a>
-        </Link>
       </div>
 
       <h1>Главная страница</h1>
