@@ -6,7 +6,7 @@ const Users = ({users}) => {
 
 
   return (
-    <MainContainer>
+    <MainContainer keywords={'users list'}>
       <h1>Список пользователей</h1>
       <ul>
         {users.map(user =>
