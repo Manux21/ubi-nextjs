@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
 import Link from "next/link";
+import MainContainer from "../components/MainContainer";
 
 const Users = ({users}) => {
 
 
   return (
-    <div>
+    <MainContainer>
       <h1>Список пользователей</h1>
       <ul>
         {users.map(user =>
@@ -17,7 +18,7 @@ const Users = ({users}) => {
           )
         }
       </ul>
-    </div>
+    </MainContainer>
   );
 };
 
